@@ -16,8 +16,7 @@
 		const form = document.getElementById("searchForm");
 		const search = document.querySelector("input[name=engine]:checked");
 		const action = actions[search.value];
-		console.log(action);
-		form.setAtrribute('action', action);
+		form.setAttribute('action', action);
 	};
     window.addEventListener("load", function(){
 		const form = document.getElementById("searchForm");
@@ -36,7 +35,8 @@
       		<label><input type="radio" name="engine" value="duckDuckGo"/> DuckDuckGO</label><br>
       		<label><input type="radio" name="engine" value="bing"/> Bing</label><br>
 	  		<label><input type="radio" name="engine" value="ask"/> Ask</label><br><br>
-		<input type="submit" value="Go!"/>
+		<button type="submit">Submit</button>
+		<!--<input type="submit" value="Go!"/>-->
 	</form>
 
 </body>
